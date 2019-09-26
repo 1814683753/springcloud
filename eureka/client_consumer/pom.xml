@@ -3,24 +3,25 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.le</groupId>
-        <artifactId>springcloud</artifactId>
+        <groupId>com.le.springcloud</groupId>
+        <artifactId>eureka</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.le.springcloud</groupId>
-    <artifactId>eureka</artifactId>
+    <groupId>com.le.springcloud.eureka</groupId>
+    <artifactId>client_consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <name>eureka</name>
+    <name>client_consumer</name>
     <description>Demo project for Spring Boot</description>
-    <modules>
-        <module>service</module>
-        <module>client</module>
-        <module>client_consumer</module>
-    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
 
     <dependencies>
-
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
