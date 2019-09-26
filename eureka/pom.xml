@@ -6,14 +6,17 @@
         <groupId>com.le</groupId>
         <artifactId>springcloud</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.le.springcloud</groupId>
     <artifactId>eureka</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>eureka</name>
     <description>Demo project for Spring Boot</description>
-
+    <modules>
+        <module>service</module>
+        <module>client</module>
+    </modules>
 
     <dependencies>
 

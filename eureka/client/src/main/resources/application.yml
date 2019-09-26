@@ -3,4 +3,7 @@ eureka:
   client:
     service-url:
       #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址。
-      defaultZone: http://127.0.0.1:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: client_test # 设置应用名称

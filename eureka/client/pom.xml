@@ -6,7 +6,6 @@
         <groupId>com.le.springcloud</groupId>
         <artifactId>eureka</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.le.springcloud.eureka</groupId>
     <artifactId>client</artifactId>
