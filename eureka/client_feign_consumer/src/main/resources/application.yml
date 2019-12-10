@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: eureka-feign_consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/ # 指定 Eureka 注册中心的地址
+server:
+  port: 8890
+##需要这个配置否则调用会报错
+ribbon:
+  eureka:
+    enabled: true
+## 开启服务熔断
+feign:
+  hystrix:
+    enabled: true

@@ -17,6 +17,7 @@
         <module>service</module>
         <module>client</module>
         <module>client_consumer</module>
+        <module>client_feign_consumer</module>
     </modules>
 
     <dependencies>

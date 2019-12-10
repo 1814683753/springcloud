@@ -1,4 +1,4 @@
-package com.le.springcloud.eureka.client_consumer.controller;
+package com.le.springcloud.eureka.client.consumer.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -27,7 +27,7 @@ public class TestController {
     @ResponseBody
     public String consumer(){
         // 注意serviceId对应的是服务提供端配置文件中spring.application.name的值
-        ServiceInstance instance = client.choose("client_test");
+        ServiceInstance instance = client.choose("client-test");
         String url = "http://" + instance.getHost() + ":" + instance.getPort() + "/test/hello";
         return restTemplate.getForObject(url, String.class);
     }

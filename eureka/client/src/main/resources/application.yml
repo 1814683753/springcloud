@@ -11,7 +11,7 @@ eureka:
     hostname: localhost
 spring:
   application:
-    name: client_test # 设置应用名称,若instance.appname没设置会采用这个作为应用名称
+    name: client-test # 设置应用名称,若instance.appname没设置会采用这个作为应用名称 ps最好不要使用下划线'_'否则消费端调用时会报错
 server:
   port: 8888
 

@@ -1,4 +1,4 @@
-package com.le.springcloud.eureka.client_consumer;
+package com.le.springcloud.eureka.client.consumer;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
