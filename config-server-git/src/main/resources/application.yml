@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/1814683753/config # 配置git仓库的地址
+          search-paths: config # git仓库地址下的相对地址，可以配置多个，用,分割。
+          username: 1814683753@qq.com
+          password: Hero19970631
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 12000
